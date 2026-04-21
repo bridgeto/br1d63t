@@ -15,12 +15,6 @@ const season = recipe.frontmatter.season;
     <div class="recipe-card-copy">
       <p class="recipe-kicker">{formatSeason(season)}</p>
       <h3>{recipe.frontmatter.title}</h3>
-      {recipe.frontmatter.intro && <p class="recipe-summary">{recipe.frontmatter.intro}</p>}
-      <p class="recipe-meta">
-        {[recipe.frontmatter.serves, recipe.frontmatter.prepTime && `Prep ${recipe.frontmatter.prepTime}`]
-          .filter(Boolean)
-          .join('  /  ')}
-      </p>
     </div>
   </a>
 </article>

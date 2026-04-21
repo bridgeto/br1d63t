@@ -63,6 +63,17 @@ export const browseCollections = [
   }
 ];
 
+export const seasonShowcase = seasons.map((season) => {
+  const recipe = recipes.find((entry) => entry.frontmatter.season === season) ?? recipes[0];
+
+  return {
+    season,
+    count: recipes.filter((entry) => entry.frontmatter.season === season).length,
+    image: recipe.frontmatter.image,
+    imageAlt: recipe.frontmatter.imageAlt ?? recipe.frontmatter.title
+  };
+});
+
 export function getRecipeBySlug(slug: string) {
   return recipes.find((recipe) => recipe.url.replace(/^\/|\/$/g, '').endsWith(slug));
 }

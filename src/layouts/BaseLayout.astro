@@ -5,6 +5,8 @@ const {
   title = 'Bridget Recipes',
   description = 'A quiet collection of seasonal recipes, cakes, soups, salads, and simple dinners.'
 } = Astro.props;
+
+const pathname = Astro.url.pathname;
 ---
 
 <!doctype html>
@@ -20,11 +22,10 @@ const {
       <div class="header-inner">
         <a href="/" class="logo">
           <span class="logo-mark">Bridget</span>
-          <span class="logo-subtitle">recipes and seasonal notes</span>
         </a>
         <nav class="nav" aria-label="Main">
-          <a href="/">Home</a>
-          <a href="/all-recipes">All Recipes</a>
+          <a href="/" aria-current={pathname === '/' ? 'page' : undefined}>Home</a>
+          <a href="/all-recipes" aria-current={pathname.startsWith('/all-recipes') ? 'page' : undefined}>All Recipes</a>
         </nav>
       </div>
     </header>
@@ -34,9 +35,7 @@ const {
     </main>
 
     <footer class="site-footer">
-      <div class="footer-inner">
-        <p>For long lunches, weeknight dinners, and the kind of cake worth putting the kettle on for.</p>
-      </div>
+      <div class="footer-inner"></div>
     </footer>
   </body>
 </html>

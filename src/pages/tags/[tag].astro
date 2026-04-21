@@ -17,12 +17,10 @@ const filtered = getRecipesByTag(Astro.params.tag ?? tag);
 
 <BaseLayout title={`${tag} | Bridget Recipes`}>
   <section class="page-intro">
-    <p class="eyebrow">Browse Tag</p>
     <h1>{formatSeason(tag)}</h1>
-    <p>{filtered.length} recipe{filtered.length === 1 ? '' : 's'} gathered here.</p>
   </section>
 
-  <div class="recipe-grid">
+  <div class="recipe-grid four-up-grid">
     {filtered.map((recipe) => (
       <RecipeCard recipe={recipe} />
     ))}

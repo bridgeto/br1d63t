@@ -1,6 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-import { formatSeason } from '../data';
+import { formatSeason, slugify } from '../data';
 import { getRecipeBySlug, getRelatedRecipes } from '../lib/recipes';
 
 const frontmatter = Astro.props.frontmatter ?? Astro.props;
@@ -30,43 +30,36 @@ const metadata = [season ? formatSeason(season) : null, serves, prepTime && `Pre
 
 <BaseLayout title={`${title} | Bridget Recipes`} description={description ?? intro}>
   <article class="recipe-article">
-    <section class="recipe-shell">
+    <section class="recipe-heading">
       <div class="recipe-copy">
-        <p class="eyebrow">Recipe</p>
-        <h1>{title}</h1>
-        {intro && <p class="recipe-lead">{intro}</p>}
-        <p class="recipe-detail-line">{metadata}</p>
-
         {tags.length > 0 && (
-          <ul class="tag-list" aria-label="Recipe tags">
-            {tags.map((tag: string) => (
-              <li>
-                <a href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`}>{tag}</a>
-              </li>
+          <p class="recipe-tag-line">
+            {tags.map((tag: string, index: number) => (
+              <>
+                <a href={`/tags/${slugify(tag)}`}>{tag}</a>{index < tags.length - 1 && ' • '}
+              </>
             ))}
-          </ul>
+          </p>
         )}
+        <h1>{title}</h1>
+        <p class="recipe-detail-line">{metadata}</p>
       </div>
-
-      <figure class="recipe-figure">
-        <img class="recipe-hero" src={image} alt={imageAlt} />
-        <figcaption>{new Date(date).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' })}</figcaption>
-      </figure>
     </section>
 
-    <div class="recipe-body prose-flow">
-      <slot />
-    </div>
+    <section class="recipe-shell">
+      <figure class="recipe-figure">
+        <img class="recipe-hero" src={image} alt={imageAlt} />
+      </figure>
+
+      <div class="recipe-body prose-flow">
+        <slot />
+      </div>
+    </section>
   </article>
 
   {relatedRecipes.length > 0 && (
     <section class="related-section">
-      <div class="section-heading">
-        <p class="eyebrow">Cook Next</p>
-        <h2>You might want one of these nearby too.</h2>
-      </div>
-
-      <div class="recipe-grid compact-grid">
+      <div class="recipe-grid four-up-grid">
         {relatedRecipes.map((recipe) => (
           <article class="recipe-card">
             <a href={recipe.url}>
@@ -76,9 +69,7 @@ const metadata = [season ? formatSeason(season) : null, serves, prepTime && `Pre
                 loading="lazy"
               />
               <div class="recipe-card-copy">
-                <p class="recipe-kicker">{formatSeason(recipe.frontmatter.season)}</p>
                 <h3>{recipe.frontmatter.title}</h3>
-                {recipe.frontmatter.intro && <p class="recipe-summary">{recipe.frontmatter.intro}</p>}
               </div>
             </a>
           </article>
