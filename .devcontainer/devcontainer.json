@@ -1,0 +1,19 @@
+{
+  "name": "astro-agent",
+  "build": {
+    "dockerfile": "../Containerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/workspace",
+  "runArgs": [
+    "--volume=${localWorkspaceFolder}:/workspace:Z",
+    "--publish=4321:4321"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode-remote.remote-containers"
+      ]
+    }
+  }
+}
