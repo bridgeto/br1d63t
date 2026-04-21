@@ -1,12 +1,16 @@
 ---
 const { recipe } = Astro.props;
-const season = recipe.frontmatter.season;
 ---
 
 <article class="recipe-card">
   <a href={recipe.url}>
-    <img src={recipe.frontmatter.image} alt={recipe.frontmatter.title} loading="lazy" />
-    <h3>{recipe.frontmatter.title}</h3>
+    <img
+      src={recipe.frontmatter.image}
+      alt={recipe.frontmatter.imageAlt ?? recipe.frontmatter.title}
+      loading="lazy"
+    />
+    <div class="recipe-card-copy">
+      <h3>{recipe.frontmatter.title}</h3>
+    </div>
   </a>
-  <p class="recipe-meta">{season}</p>
 </article>

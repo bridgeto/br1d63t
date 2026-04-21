@@ -1,0 +1,93 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import { slugify } from '../data';
+
+const frontmatter = Astro.props.frontmatter ?? Astro.props;
+
+const {
+  title,
+  image,
+  imageAlt = title,
+  tags = [],
+  intro,
+} = frontmatter;
+
+const renderedContent = await Astro.slots.render('default');
+const headingMatches = Array.from(renderedContent.matchAll(/<h2\b[^>]*>([\s\S]*?)<\/h2>/gi));
+const stripTags = (value: string) => value.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').trim().toLowerCase();
+
+const preamble = headingMatches.length > 0
+  ? renderedContent.slice(0, headingMatches[0].index).trim()
+  : renderedContent.trim();
+
+const sections = headingMatches.map((match, index) => {
+  const start = match.index ?? 0;
+  const end = headingMatches[index + 1]?.index ?? renderedContent.length;
+
+  return {
+    title: stripTags(match[1]),
+    html: renderedContent.slice(start, end).trim()
+  };
+});
+
+const ingredientsIndex = sections.findIndex((section) => section.title.includes('ingredient'));
+const instructionsIndex = sections.findIndex((section) =>
+  /(method|instruction|direction|preparation)/.test(section.title)
+);
+
+const ingredientsSection =
+  (ingredientsIndex >= 0 && sections[ingredientsIndex]) ??
+  (sections.length > 0 ? sections[0] : null);
+
+const instructionsSection =
+  (instructionsIndex >= 0 && sections[instructionsIndex]) ??
+  sections.find((_, index) => index !== ingredientsIndex) ??
+  null;
+
+const remainingSections = sections.filter(
+  (_, index) => index !== ingredientsIndex && index !== instructionsIndex
+);
+---
+
+<BaseLayout title={`${title} | Bridget Recipes`} description={intro}>
+  <article class="recipe-article">
+    <div class="recipe-frame">
+      <section class="recipe-heading">
+        <div class="recipe-copy">
+          {tags.length > 0 && (
+            <p class="recipe-tag-line">
+              {tags.map((tag: string, index: number) => (
+                <>
+                  <a href={`/tags/${slugify(tag)}`}>{tag}</a>{index < tags.length - 1 && ' • '}
+                </>
+              ))}
+            </p>
+          )}
+          <h1>{title}</h1>
+        </div>
+      </section>
+
+      <section class="recipe-shell">
+        <figure class="recipe-figure">
+          <img class="recipe-hero" src={image} alt={imageAlt} />
+        </figure>
+
+        {ingredientsSection && (
+          <div class="recipe-sidebar">
+            <section class="recipe-body prose-flow recipe-section" set:html={ingredientsSection.html} />
+          </div>
+        )}
+
+        <div class="recipe-main">
+          {preamble && <div class="recipe-body prose-flow" set:html={preamble} />}
+          {instructionsSection && (
+            <section class="recipe-body prose-flow recipe-section" set:html={instructionsSection.html} />
+          )}
+          {remainingSections.map((section) => (
+            <section class="recipe-body prose-flow recipe-section" set:html={section.html} />
+          ))}
+        </div>
+      </section>
+    </div>
+  </article>
+</BaseLayout>
