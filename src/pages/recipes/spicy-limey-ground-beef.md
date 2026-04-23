@@ -11,10 +11,12 @@ serves: 3-4 people
 ---
 
 ## Ingredients
+
 ### Produce
 - 1 small shallot, finely diced
 - 2–3 cloves garlic, grated
 - 2 limes (zest of 1, juice of 2 - about 2-4 Tbsp)
+
 ### Pantry
 - 2 Tbsp coconut aminos (or soy sauce + pinch of sugar)
 - 3 Tbsp sriracha
@@ -22,6 +24,7 @@ serves: 3-4 people
 - 1 Tbsp vegetable oil
 - 1/2 tsp baking soda
 - 1 tsp kosher salt
+
 ### Meat
 - 1 lb ground beef
 
