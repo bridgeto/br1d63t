@@ -5,7 +5,7 @@ date: 2026-04-22
 season: winter
 tags:
   - Dinner
-image: /recipes/spicylimeygroundbeef.jpeg
+image: /recipes/spicy-limey-ground-beef/spicylimeygroundbeef.jpeg
 imageAlt: Ground beef, steamed rice, brocooli, peas, and a lime wedge
 serves: 3-4 people
 ---
