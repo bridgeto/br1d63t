@@ -10,7 +10,7 @@ tags:
 image: /recipes/gentle-chicken-and-leek-soup/gentle-chicken-and-leek-soup.png
 imageAlt: A bowl of warm chicken soup
 intro: Leeks are cooked until properly dark at the edges, then folded through creamy butter beans with herbs.
-serves: 4
+serves: Serves 4
 prepTime: 15 min
 cookTime: 20 min
 ---
