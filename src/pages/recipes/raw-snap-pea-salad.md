@@ -32,7 +32,7 @@ featured: true
 - 1/4 cup parsley or mint, finely chopped
 - Handful of snow pea sprouts (about 40g)
 
-###Dairy: 
+### Dairy: 
 - 2 oz. feta cheese, plus more for topping
 
 
