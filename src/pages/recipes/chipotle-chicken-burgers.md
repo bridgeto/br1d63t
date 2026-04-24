@@ -7,7 +7,7 @@ tags:
   - Dinner
   - Summer
   - Spring
-image: /recipes/spicy-limey-ground-beef/ChipotleChickenBurgerswithCilantroLimeSlaw.png
+image: /recipes/chipotle-chicken-burgers/ChipotleChickenBurgerswithCilantroLimeSlaw.png
 imageAlt: Chicken burger with slaw on bun
 intro: A tender yogurt loaf with chopped apricots and a little lemon zest through the crumb.
 serves: One loaf
