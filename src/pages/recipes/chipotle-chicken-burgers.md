@@ -48,7 +48,7 @@ Prepare the burgers:
 1. In a medium bowl, stir together 2 Tbsp. mayonnaise, chipotle peppers, salt, and pepper. Add the ground chicken and mix gently, being careful not to overwork the meat. Divide into 4 equal portions and, using damp hands, shape into 1-inch-thick patties. Set aside.
 2. Heat a cast iron pan over medium-high heat. Toast the buns until lightly golden, then set aside.
 3. Once the pan is hot, add a thin layer of neutral oil and place the patties in the pan. They’ll be a little wet, but that’s okay. Using damp hands helps them hold their shape.
-4. Cook until deeply browned and crisp on both sides, about 3–4 minutes per side. Ensure the internal temperature reaches 165°C, then transfer to a plate and let rest while you prepare the slaw.
+4. Cook until deeply browned and crisp on both sides, about 3–4 minutes per side. Ensure the internal temperature reaches 165°F, then transfer to a plate and let rest while you prepare the slaw.
 
 Prepare the slaw:
 
