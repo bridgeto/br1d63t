@@ -7,7 +7,7 @@ tags:
   - Dinner
 image: /recipes/spicy-limey-ground-beef/spicylimeygroundbeef.jpeg
 imageAlt: Ground beef, steamed rice, brocooli, peas, and a lime wedge
-serves: 3-4
+serves: Serves 3-4
 ---
 
 ## Ingredients
