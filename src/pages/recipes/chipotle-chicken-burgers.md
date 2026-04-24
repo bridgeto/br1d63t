@@ -52,26 +52,4 @@ Prepare the burgers:
 Prepare the slaw:
 4. In a large bowl, mix together the remaining 2 Tbsp. mayonnaise, yogurt, lime juice, garlic, salt, and pepper. Add the cabbage and cilantro, then toss to coat evenly. Be sure to taste and adjust seasonings as you see fit!
 Assemble:
-5. Place a burger patty on each toasted bun and top generously with slaw. Enjoy.
-
-For layout testing, this paragraph intentionally adds extended body copy beneath
-the numbered steps. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-dolore eu fugiat nulla pariatur.
-
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-magni dolores eos qui ratione voluptatem sequi nesciunt.
-
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
-officia deserunt mollitia animi, id est laborum et dolorum fuga.
-
-## Notes
-
-Brush the top with warm apricot jam if you want a glossier finish.
+5. Place a burger patty on each toasted bun and top generously with slaw. Enjoy!
