@@ -6,6 +6,8 @@ season: Spring
 tags:
   - Sides
   - Spring
+  - Salad
+  - Vegetarian
 image: recipes/raw-snap-pea-salad/raw-snap-pea-salad.png
 imageAlt: snap pea salad
 intro: Olive oil keeps this cake plush for days while blood orange gives it perfume and a little bitterness.
@@ -14,7 +16,7 @@ prepTime: 25 min
 cookTime: 45 min
 featured: true
 ---
-
+*Serves 4*
 ## Ingredients
 
 ### Pantry:
