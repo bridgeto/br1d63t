@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/RecipeLayout.astro
 title: Raw Snap Pea Salad 
-date: 2026-02-08
-season: winter
+date: 2026-04-22
+season: Spring
 tags:
   - Sides
   - Spring
