@@ -23,15 +23,15 @@ cookTime: 50 min
 - 3–4 chipotle peppers in adobo, finely diced (about 3–4 Tbsp.)
 - 1 tsp kosher salt + black pepper
 - 4 burger buns
-- 1/3 bunch cilantro, finely chopped (about 1 heaping cup)
-- 2 limes, juiced
-- 1 garlic clove, grated
 - Neutral cooking oil
 
 
 ### Produce
 
-- ¼ head green cabbage, shaved (about 3 heaping cups) 
+- ¼ head green cabbage, shaved (about 3 heaping cups)
+- 1/3 bunch cilantro, finely chopped (about 1 heaping cup)
+- 2 limes, juiced
+- 1 garlic clove, grated
 
 
 ### Meat
