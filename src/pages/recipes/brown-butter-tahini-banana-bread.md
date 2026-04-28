@@ -7,6 +7,7 @@ tags:
   - Fall
   - Breakfast
   - Snacks
+  - Vegetarian
 image: /recipes/brown-butter-tahini-banana-bread/brown-butter-tahini-banana-bread.png
 imageAlt: Banana bread with sesame seeds and bananas on top
 intro: 
