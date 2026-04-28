@@ -6,7 +6,6 @@ season: Summer
 tags:
   - Dinner
   - Summer
-  - Spring
 image: /recipes/chipotle-chicken-burgers/ChipotleChickenBurgerswithCilantroLimeSlaw.png
 imageAlt: Chicken burger with slaw on bun
 intro: A tender yogurt loaf with chopped apricots and a little lemon zest through the crumb.
