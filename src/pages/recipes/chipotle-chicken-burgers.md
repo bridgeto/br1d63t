@@ -2,7 +2,7 @@
 layout: ../../layouts/RecipeLayout.astro
 title: Chipotle Chicken Burgers with Cilantro Lime Slaw
 date: 2026-04-23
-season: summer
+season: Summer
 tags:
   - Dinner
   - Summer
