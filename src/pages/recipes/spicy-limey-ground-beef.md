@@ -2,7 +2,7 @@
 layout: ../../layouts/RecipeLayout.astro
 title: Spicy Limey Ground Beef Bowls
 date: 2026-04-22
-season: winter
+season: Winter
 tags:
   - Dinner
 image: /recipes/spicy-limey-ground-beef/spicylimeygroundbeef.jpeg
